@@ -1,21 +1,11 @@
-# BT OpsFabric — GitHub Pages export
+# Ops Fabric — public immersive website
 
-Extract this ZIP, then upload the extracted files and assets folder to your repository. Keep index.html at the repository root. Configure GitHub Pages to serve this directory. No build step, API keys or server are required.
+Requested custom address: https://draft.opsfabric.com/
 
-## Guided demo
-BT N+ advisory → selected CI/device → Entuity device down → NetBrain diagnostic evidence → ServiceNow incident → AI-assisted troubleshooting plan. The same illustrative alias, DEMO-CI-01, follows the entire journey. All buttons operate a local simulated walkthrough; no live systems or APIs are called.
+GitHub Pages serves the prebuilt website at the repository root. `CNAME` declares `draft.opsfabric.com`. In the DNS zone for `opsfabric.com`, set a CNAME named `draft` to `dhimanchaudhuri2016.github.io` (no path). GitHub must finish domain verification and HTTPS provisioning before the custom address is ready.
 
-The vulnerability and outage are separate observations. The example does not assert a causal link. BT AI Assisted Troubleshooting is presented in the ServiceNow workflow alongside Now Assist AI; it is not represented as a live Now Assist response.
+The website is public. Anyone with its URL can view it; no email invitation or GitHub sign-in is required. No email allowlist or login screen is implemented.
 
-The archive includes all images and logo assets. Optional Google Fonts fall back to system fonts when unavailable.
+The prior root demo is preserved under `legacy-demo/`. The previous immersive copy and development source remain in `immersive/`; see its README for build instructions. The repository contains no credentials or internal slide deck.
 
-## Brand asset sources
-BT N+: extracted from the user-supplied image (33).png.
-Entuity: https://support.entuity.com/hc/en-us
-NetBrain: https://exchange.netbrain.com/general-questions-support-46/important-netbrain-url-update-527
-ServiceNow: https://www.servicenow.com/content/dam/servicenow-assets/images/naas/servicenow-header-logo.svg
-Now Assist sparkle: https://horizon.servicenow.com/workspace/components/now-icon-animated
-Product marks belong to their respective owners.
-
-## Customer experience opening
-The site starts with customer clarity before disruption, during an incident, through recovery and after resolution. Each moment includes a sample communication and a link to its supporting tool demonstration. Examples are illustrative, not live service updates or measured service commitments.
+The website uses BT purple and pink, an interactive WebGL world, official BT imagery, attributed published KPI claims and a five-stage AI journey. Images are referenced from BT's public host.
