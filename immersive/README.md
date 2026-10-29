@@ -19,3 +19,7 @@ Three.js WebGL world, scroll-driven camera perspectives, orbit/zoom controls, ca
 Palette drawn from the BT reference stylesheets: #5514B4 primary purple, #FF5A4B coral, white surfaces and dark body text. Official BT webfonts are referenced with system fallbacks; cross-origin delivery should be verified or approved font files hosted locally. No internal slide deck, customer data, credentials or commercial details are included.
 
 Three.js is MIT-licensed; the world map uses world-atlas / Natural Earth data. Darkmoon informed the interaction approach; its source, imagery and assets are not included.
+
+## Official product content update
+
+Pink accents, imagery, five operating domains, six published KPI cards, an interactive five-stage AI journey and expanded business outcomes are included. Content and original imagery: https://international.bt.com/platforms/ops-fabric (reviewed 29 October 2026). KPI claims are attributed to BT; the interactive model is illustrative.
