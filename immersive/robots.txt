@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dhimanchaudhuri2016.github.io/OpsFabric/immersive/sitemap.xml
