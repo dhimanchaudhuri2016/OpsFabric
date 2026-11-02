@@ -10,7 +10,7 @@
 - Indicative Now / Next / Beyond roadmap with no unapproved release-date commitments.
 
 ## Required before final narrative sign-off
-1. Supply the missing image/list containing the exact ten Ops Fabric EPICs. It was referenced in the feedback but not attached. Do not invent the ten names or claim a completed EPIC-to-KPI mapping.
+1. The supplied Horizon 1 image has now been incorporated: ten category names and individual counts are transcribed. Confirm whether these catalogue categories are the intended EPIC labels. Percentage associations remain service-level navigation, not category-level measurements.
 2. Confirm which Gen AI capabilities are available, in development or aspirational, and their publishable service scope.
 3. Confirm approved milestones, fiscal/calendar date convention and customer-facing dates for the roadmap.
 4. Validate estate/advisory and diagnostic examples against service entitlements.
@@ -20,3 +20,5 @@
 - Current public service narrative: https://international.bt.com/platforms/ops-fabric
 - Platform context: https://international.bt.com/platforms/global-fabric and https://international.bt.com/platforms/global-voice
 - Operational examples and future directions also informed by the user-supplied briefing and explicit stakeholder feedback. Internal customer details and speculative release dates are excluded.
+
+Gen AI narrative now explicitly includes assisted troubleshooting, suggested next checks and AI-drafted customer-language updates, grounded in facts and reviewed before sending. The cropped image does not establish the meaning of its coloured cells; no interpretation of those cells is published.
