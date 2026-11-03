@@ -12,7 +12,7 @@ Sources:
 
 ## 2. Resilience arena
 
-Original Three.js browser game, loaded on demand. A fragmented network erodes simulated service integrity; the player then equips the Ops Fabric resilience emitter. Earlier threat visibility, assisted targeting, interception, repair interpolation and a recovery screen tell the resilience story. Mouse/keyboard, touch controls, pause, full screen, replay and guided mode are supported.
+Original Three.js browser game, loaded on demand. A fragmented network erodes simulated service integrity; the player then equips the Ops Fabric resilience emitter. Earlier threat visibility, assisted targeting, interception, repair interpolation and a recovery screen tell the resilience story. Mouse/keyboard, visible steering buttons, touch controls, pause, full screen, replay and guided mode are supported. Speech bubbles tell the two-act story; defence is explicitly locked in Act I, with an immediate Enable Ops Fabric action to move into Act II.
 
 The gun and threat destruction are metaphors. They do not demonstrate automatic elimination of actual vulnerabilities or guarantee product security performance. All threat labels, scores and integrity readings are simulated. This is not a native console title and no headset/WebXR build or headset validation is claimed.
 
@@ -35,3 +35,7 @@ Customer-by-customer adoption tables, named account rollout plans, internal effi
 ## Build
 
 Run npm ci, then npm run build. Deploy the entire dist directory, including chunks and arena.js. The game is dynamically imported; Three.js code is shared between entry points. Keep those relative paths intact for GitHub Pages.
+
+## Feedback
+
+Internal colleague and external customer / partner feedback both prepare an email to service.process.adoption@bt.com. Reactions, area, optional name and comments are encoded into the email draft. Visitors must send the draft in their email app; Copy feedback is the fallback. The static site does not store submissions or claim email delivery.
