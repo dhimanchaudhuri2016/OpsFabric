@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "type": "module",
   "scripts": {
-    "build": "esbuild src/experience.js --bundle --minify --format=esm --outfile=experience.js"
+    "build": "esbuild src/experience.js src/arena.js --bundle --splitting --minify --format=esm --outdir=. --chunk-names=chunks/[name]-[hash]"
   },
   "dependencies": {
     "three": "0.170.0",
