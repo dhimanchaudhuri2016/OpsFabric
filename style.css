@@ -203,3 +203,12 @@ body.hero-out:not(.exploring) #scene-labels{display:none}.thumbnail-hook{max-wid
  .arena-intel:has(>:not([hidden]))~.arena-signal{opacity:0}
 }
 @media(max-width:767px) and (min-height:581px) and (max-height:700px){.arena-intel{top:145px}}
+/* The final interception exposes its exact capability in the recovery result. */
+.arena-final-capability{margin:18px 0 22px;padding:18px 20px;border:1px solid #ed70f088;border-radius:7px;background:#5514b426}
+.arena-final-capability>span{display:block;font:8px/1.6 monospace;letter-spacing:.6px;color:#eaa1ff;margin-bottom:10px}
+.arena-final-capability>strong{display:block;font-family:'BT Curve Headline',Arial,sans-serif;font-size:25px;line-height:1.15;font-weight:400;letter-spacing:-.3px;color:white}
+.arena-story-panel .arena-final-capability>p{font-size:12px;line-height:1.65;color:#e4cfee;margin:11px 0 0}
+@media(max-width:767px){.arena-final-capability{padding:14px 16px;margin:15px 0 18px}.arena-final-capability>span{font-size:7px;margin-bottom:8px}.arena-final-capability>strong{font-size:22px}.arena-story-panel .arena-final-capability>p{font-size:11px;line-height:1.55;margin-top:9px}}
+@media(max-height:700px){.arena-final-capability{padding:12px 14px;margin:13px 0 15px}.arena-final-capability>strong{font-size:20px}.arena-story-panel .arena-final-capability>p{font-size:10px;line-height:1.5}}
+
+.kpi-number{font-variant-numeric:tabular-nums}

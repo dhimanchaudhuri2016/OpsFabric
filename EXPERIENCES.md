@@ -12,7 +12,7 @@ Sources:
 
 ## 2. Resilience arena
 
-Original Three.js browser game, loaded on demand. A fragmented network erodes simulated service integrity; the player then equips the Ops Fabric resilience emitter. Earlier threat visibility, assisted targeting, interception, repair interpolation and a recovery screen tell the resilience story. Mouse/keyboard, visible steering buttons, touch controls, pause, full screen, replay and guided mode are supported. Fast incoming threats consume simulated lives as the three Act I speech bubbles play. The round ends with You lost; players can choose a second life through Ops Fabric Digital Resilience, or retry the fragmented round. Act II restores full integrity and uses a single target readout. Each successful interception reveals an illustrative capability in one queued card, with no floating label stack.
+Original Three.js browser game, loaded on demand. A fragmented network erodes simulated service integrity; the player then equips the Ops Fabric resilience emitter. Earlier threat visibility, assisted targeting, interception, repair interpolation and a recovery screen tell the resilience story. Mouse/keyboard, visible steering buttons, touch controls, pause, full screen, replay and guided mode are supported. Fast incoming threats consume simulated lives as the three Act I speech bubbles play. The round ends with You lost; players can choose a second life through Ops Fabric Digital Resilience, or retry the fragmented round. Act II restores full integrity and uses a single target readout. Each successful interception immediately reveals that threat’s illustrative capability in a single card, replacing the previous reveal. The timer only dismisses the card; it never reveals another capability. Threats continue spawning and moving during reveals. The eighth interception completes the round immediately and shows its exact capability in the recovery result, with no delayed card sequence.
 
 The gun and threat destruction are metaphors. They do not demonstrate automatic elimination of actual vulnerabilities or guarantee product security performance. All threat labels, scores and integrity readings are simulated. This is not a native console title and no headset/WebXR build or headset validation is claimed.
 
@@ -39,3 +39,7 @@ Run npm ci, then npm run build. Deploy the entire dist directory, including chun
 ## Feedback
 
 Internal colleague and external customer / partner feedback both prepare an email to service.process.adoption@bt.com. Reactions, area, optional name and comments are encoded into the email draft. Visitors must send the draft in their email app; Copy feedback is the fallback. The static site does not store submissions or claim email delivery.
+
+## KPI animation
+
+The six published KPI cards count from zero to their final values once when they enter view, in approximately 1.1 seconds. Ranges and paired percentages animate both values. The authored HTML retains the final figures for search engines and browsers without JavaScript; reduced-motion preferences show final figures immediately.

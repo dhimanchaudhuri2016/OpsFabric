@@ -96,3 +96,5 @@ $$('.command-launch').forEach(b=>b.addEventListener('click',openCommand));
 
 
 import './feedback.js';
+
+import './kpis.js';
