@@ -112,3 +112,94 @@ body.arena-open,body.command-open{overflow:hidden}.arena-modal{position:fixed;in
 
 /* Keep immersive labels inside their scene and narrow layouts within the viewport. */
 body.hero-out:not(.exploring) #scene-labels{display:none}.thumbnail-hook{max-width:calc(100% - 64px)}@media(max-width:767px){footer>div{flex-wrap:wrap;gap:14px 20px;justify-content:flex-start}}@media(max-width:360px){.thumbnail-hook{max-width:calc(100% - 64px)}}
+
+/* A complete first round, a deliberate second life, and one readable capability reveal. */
+.arena-hud{gap:45px}
+.arena-lives strong{display:inline-block}
+.arena-lives>div{display:flex;gap:5px;margin-top:12px}
+.arena-lives i{width:17px;height:4px;background:#f200f5;border-radius:2px;box-shadow:0 0 10px #f200f535}
+.arena-lives i.is-lost,.arena-lives i[data-lost=true]{background:#ffffff26;box-shadow:none}
+.arena-target,.arena-capability{position:absolute;right:4%;width:min(320px,36vw);pointer-events:none;border:1px solid #bf88ee66;border-radius:10px;padding:17px 20px;background:linear-gradient(135deg,#32104df2,#180824f5);box-shadow:0 12px 40px #09011055;backdrop-filter:blur(14px)}
+.arena-capability{top:35%;border-color:#ee70f099;min-height:150px;background:linear-gradient(135deg,#4d155fee,#200b31f5)}
+.arena-target{top:calc(35% + 202px);padding:13px 17px;border-radius:7px;background:#1b0a2be8}
+.arena-target>span,.arena-capability>span{display:block;font:8px/1.5 monospace;letter-spacing:1px;color:#f3a1ff;margin-bottom:10px}
+.arena-target>strong,.arena-capability>strong{display:block;font-family:'BT Curve Headline',Arial,sans-serif;font-size:25px;line-height:1.15;letter-spacing:-.4px;font-weight:400;color:white}
+.arena-target>strong{font-size:17px;letter-spacing:0}
+.arena-capability>p{margin:11px 0;font-size:12px;line-height:1.65;color:#efdbfa}
+.arena-target>small,.arena-capability>small{display:block;font:8px/1.6 monospace;letter-spacing:.2px;color:#c9b0de;margin-top:8px}
+.arena-capability-enter{animation:arenaBubbleIn .3s ease-out both}
+.arena-story-panel{max-height:calc(100svh - 175px);overflow:auto}
+.arena-modal:not([data-phase=intro]) .arena-intro-controls{display:none}
+.arena-secondary{display:block;margin:14px auto 0;padding:10px 16px;background:transparent;color:#dfc7f2;font-size:12px;text-decoration:underline;text-underline-offset:4px;border-radius:4px;min-height:44px}
+.arena-secondary:hover{color:white;background:#5514b430}
+.arena-modal[data-phase=lost] .arena-story-panel{border-color:#f34fa28c;box-shadow:0 30px 120px #0009,0 0 70px #f200f524}
+.arena-modal[data-phase=lost] .arena-story-panel h3{color:#ffb8ed;font-size:clamp(42px,5vw,68px)}
+.arena-modal[data-phase=lost] .arena-signal,.arena-modal[data-phase=complete] .arena-signal{display:none}
+.arena-modal[data-phase=lost] .arena-story-panel .arena-primary{background:linear-gradient(110deg,#7513c9,#a018c7);line-height:1.5;text-align:left;gap:20px}
+.arena-hit-feedback{position:absolute;inset:0;pointer-events:none}
+.arena-paused .arena-capability,.arena-paused .arena-target{opacity:.2}
+@media(max-width:900px){.arena-hud{gap:28px}.arena-hud strong{font-size:24px}.arena-hud>div>span{font-size:7px}.life-track{width:105px}}
+@media(max-width:767px){
+ .arena-hud{top:100px;left:5%;right:5%;display:grid;grid-template-columns:1.05fr 1.45fr 1fr .7fr;gap:10px}
+ .arena-hud>div>span{font-size:6px;letter-spacing:.5px;line-height:1.4;display:block}
+ .arena-hud strong{font-size:18px;line-height:1.1;margin-top:8px;letter-spacing:-.3px}
+ .arena-hud strong>span{font-size:10px}.life-track{width:100%;max-width:80px;margin-top:9px}
+ .arena-lives>div{gap:3px;margin-top:9px}.arena-lives i{width:12px;height:3px}
+ .arena-capability,.arena-target{left:5%;right:5%;width:auto;max-width:420px;margin:0 auto;padding:14px 17px}
+ .arena-capability{top:31%;min-height:135px}
+ .arena-capability>strong{font-size:24px}.arena-capability>span{font-size:7px;margin-bottom:8px}
+ .arena-capability>p{font-size:11px;line-height:1.55;margin:9px 0}
+ .arena-capability>small{font-size:7px;margin-top:6px}
+ .arena-target{top:calc(31% + 180px);padding:11px 15px;border-radius:7px}
+ .arena-target>span{font-size:7px;margin-bottom:5px}.arena-target>strong{font-size:15px}.arena-target>small{font-size:7px;margin-top:5px}
+ .arena-story-panel{top:53%;padding:25px;max-height:calc(100svh - 175px)}
+ .arena-story-panel h3{font-size:36px;margin:18px 0}.arena-story-panel p{font-size:12px;line-height:1.65;margin-bottom:18px}
+ .arena-story-panel .arena-primary{font-size:12px;padding:13px 16px;min-height:48px}
+ .arena-secondary{font-size:11px;margin-top:9px;padding:9px 12px}
+ .arena-story-panel small{font-size:8px;margin-top:14px}
+}
+@media(max-height:700px) and (max-width:767px){
+ .arena-header{padding-top:17px}.arena-header h2{font-size:18px;margin-top:6px}.arena-header>div:first-child>span{font-size:6px}
+ .arena-hud{top:79px}.arena-hud strong{font-size:16px;margin-top:6px}
+ .arena-signal{top:24%;font-size:8px;line-height:1.5}
+ .arena-dialogue{top:32%}.arena-dialogue-quote{font-size:20px}.arena-dialogue-hint{font-size:8px}
+ .arena-capability{top:31%;min-height:0;padding:12px 15px}.arena-capability>strong{font-size:21px}.arena-capability>p{font-size:10px;line-height:1.45;margin:7px 0}.arena-capability>span{margin-bottom:7px}.arena-capability>small{font-size:6px}
+ .arena-target{top:calc(31% + 157px);padding:9px 13px}.arena-target>strong{font-size:14px}.arena-target>span,.arena-target>small{font-size:6px}
+ .arena-bottom>p{bottom:112px;font-size:7px}.arena-bottom,.arena-touch-move{bottom:35px}.arena-touch-move{grid-template-columns:repeat(3,38px);grid-template-rows:repeat(2,38px)}
+ .arena-bottom-actions{max-width:calc(100% - 136px)}.arena-bottom-actions button{min-height:38px;font-size:8px;padding:9px 8px}.arena-bottom-actions .arena-fire{padding:10px 12px;min-width:75px}.arena-bottom-actions [data-action=assist]{font-size:8px}
+ .arena-story-panel{padding:20px;top:53%;max-height:calc(100svh - 140px)}.arena-story-panel h3{font-size:31px;margin:14px 0}.arena-story-panel p{font-size:11px;margin-bottom:14px}.arena-story-panel .arena-primary{font-size:11px}.arena-story-panel small{font-size:7px;line-height:1.5;margin-top:12px}
+ .arena-badge{bottom:11px}
+}
+@media(max-height:580px) and (min-width:768px){
+ .arena-hud{top:80px;gap:25px}.arena-hud strong{font-size:20px}.arena-hud>div>span{font-size:6px}.life-track,.arena-lives>div{margin-top:8px}
+ .arena-dialogue{top:34%;width:290px}.arena-capability{top:33%;width:280px;min-height:0;padding:13px 16px}.arena-capability>strong{font-size:21px}.arena-capability>p{font-size:10px;line-height:1.5;margin:8px 0}.arena-capability>span,.arena-capability>small{font-size:6px}
+ .arena-target{top:auto;bottom:105px;right:4%;width:280px;padding:10px 14px}.arena-target>strong{font-size:14px}.arena-target>span,.arena-target>small{font-size:6px}
+ .arena-story-panel{top:55%;max-height:calc(100svh - 115px);padding:23px}.arena-story-panel h3{font-size:31px;margin:14px 0}.arena-story-panel p{font-size:11px;line-height:1.55}.arena-story-panel small{font-size:7px}.arena-primary{padding:12px 16px;font-size:12px}.arena-secondary{font-size:10px;margin-top:6px}
+}
+@media(prefers-reduced-motion:reduce){.arena-capability-enter{animation:none}.arena-damage .arena-shade{box-shadow:inset 0 0 70px #8b47731f}}
+
+@media(max-height:580px) and (min-width:620px){
+ .arena-modal[data-phase=guard] .arena-dialogue{display:none}
+ .arena-target{left:4%;right:auto;top:145px;bottom:auto;width:280px;max-width:43vw;margin:0;padding:10px 14px}
+ .arena-capability{left:auto;right:4%;top:145px;width:280px;max-width:43vw;margin:0;padding:12px 15px;min-height:0}
+ .arena-capability>strong{font-size:20px}.arena-capability>span,.arena-capability>small{font-size:6px}.arena-capability>p{font-size:10px;line-height:1.45;margin:8px 0}
+ .arena-target>strong{font-size:14px}.arena-target>span,.arena-target>small{font-size:6px}
+ .arena-signal{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .arena-dialogue{top:36%;width:290px}.arena-dialogue-quote{font-size:19px;margin:8px 0}.arena-dialogue-copy{padding:11px 15px}
+}
+/* Flow the two intel cards together; wrapped copy cannot collide with its neighbour. */
+.arena-intel{position:absolute;right:4%;top:35%;width:min(320px,36vw);display:flex;flex-direction:column;gap:12px;pointer-events:none}
+.arena-intel>.arena-capability,.arena-intel>.arena-target{position:relative;inset:auto;width:100%;max-width:none;margin:0}
+@media(max-width:767px){.arena-intel{left:5%;right:5%;top:31%;width:auto;max-width:420px;margin:0 auto;gap:11px}#arena-state{font-size:14px;line-height:1.15;overflow-wrap:anywhere}}
+@media(max-height:700px) and (max-width:767px){.arena-intel{top:31%;gap:10px}#arena-state{font-size:12px}}
+@media(max-height:580px) and (min-width:620px){.arena-intel{left:4%;right:4%;top:145px;width:auto;max-width:none;margin:0;display:grid;grid-template-columns:minmax(0,280px) minmax(0,280px);justify-content:space-between;align-items:start;gap:25px}.arena-intel>.arena-capability{grid-column:2;grid-row:1}.arena-intel>.arena-target{grid-column:1;grid-row:1}}
+.arena-modal:is([data-phase=intro],[data-phase=lost],[data-phase=complete]) .arena-bottom{display:none}
+/* Controls, target instructions and the score carry the objective without a duplicate overlay. */
+.arena-bottom>p{display:none}
+/* Leave the aiming area clear on phones: a hit reveal temporarily replaces the target card. */
+@media(max-width:767px) and (min-height:581px){
+ .arena-intel{top:175px}
+ .arena-intel:has(>.arena-capability:not([hidden]))>.arena-target{display:none}
+ .arena-intel:has(>:not([hidden]))~.arena-signal{opacity:0}
+}
+@media(max-width:767px) and (min-height:581px) and (max-height:700px){.arena-intel{top:145px}}
